@@ -1,4 +1,4 @@
-# Mock Interface Demonstration
+# Testing Go APIs with Interfaces and Mocks - Blog
 
 ## Operate API
 ```
