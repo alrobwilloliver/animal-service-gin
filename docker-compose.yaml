@@ -12,7 +12,6 @@ services:
     volumes: 
       - ./store/docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
       - db:/var/lib/postgresql/data
-      - ./store/seed.sql:/data/seed.sql
 volumes:
   db:
     driver: local
