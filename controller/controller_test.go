@@ -158,9 +158,9 @@ func TestGetAllAnimals(t *testing.T) {
 			},
 		}
 		handler := controller.NewHandler(fakeQuerier)
-		router.GET("/animals", handler.GetAnimals)
+		router.GET("/animal", handler.GetAnimals)
 		w := httptest.NewRecorder()
-		req := httptest.NewRequest("GET", "/animals", nil)
+		req := httptest.NewRequest("GET", "/animal", nil)
 		router.ServeHTTP(w, req)
 
 		if w.Code != 200 {
