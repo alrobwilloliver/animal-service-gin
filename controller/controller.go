@@ -7,10 +7,10 @@ import (
 )
 
 type Handler struct {
-	querier model.Queries
+	querier store.Queries
 }
 
-func NewHandler(q model.Queries) *Handler {
+func NewHandler(q store.Queries) *Handler {
 	return &Handler{
 		querier: q,
 	}
